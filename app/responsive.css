@@ -1,0 +1,267 @@
+.hero-text {
+    opacity: 0.88;
+    font-size: 90px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: 3.2px;
+    text-align: center;
+    color: white;
+}
+
+.heroish-text {
+    opacity: 0.88;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: 3.2px;
+    text-align: center;
+    color: white;
+}
+
+.super-hero-text {
+    opacity: 0.88;
+    font-size: 260px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: 3.2px;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For everything less or equal 768px */
+    .small-header-font-768 {
+        font-size: 8pt !important;
+    }
+
+    .contact_info {
+        display: none;
+    }
+
+    .nav-bar.w3-card {
+        box-shadow: none !important;
+    }
+
+    .resp-m-top {
+        margin-top: 2.5em !important;
+    }
+
+    .push-down {
+        height: 50px;
+    }
+
+    .force>.contact_info {
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+    }
+
+    .justify-center-768 {
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+    }
+
+    .burger {
+        display: flex !important
+    }
+
+    .hero3 {
+        min-height: 550px !important;
+        height: 550px !important;
+    }
+
+    .nav-bar {
+        background-color: transparent !important;
+    }
+
+    .card-triplet {
+        display: none;
+    }
+
+    .row-into-column,
+    .row-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+
+    h1.title {
+        font-size: 20pt !important;
+    }
+
+    .hero-text {
+        font-size: 50px !important;
+    }
+
+    #rankings-home .hero-text {
+        font-size: 70px !important;
+    }
+
+    #rankings-home div.left {
+        top: 0;
+        bottom: none;
+        width: 100% !important;
+        height: 350px !important;
+    }
+
+    #rankings-home div.right {
+        bottom: 0;
+        top: none;
+        width: 100% !important;
+        height: 350px !important;
+    }
+
+    .rankings-gender-background>div {
+        height: 350px !important;
+    }
+
+    .reverse-768 {
+        flex-direction: row-reverse !important
+    }
+
+    .vertical-gap {
+        width: 0 !important
+    }
+
+    .sponsor {
+        width: 33% !important;
+    }
+
+    .sponsor>img {
+        max-width: 100px !important;
+    }
+
+    .text-right-center {
+        text-align: center !important;
+    }
+
+    .tournament-card {
+        height: 200px !important;
+    }
+
+    .ml-auto-768 {
+        margin-left: 0 !important;
+
+    }
+
+    .mb-1em-768 {
+        margin-bottom: 1em;
+    }
+
+    .floating-medal {
+        display: none;
+    }
+
+    .hide-768 {
+        display: block !important;
+    }
+
+    .font-22 {
+        font-size: 12pt !important
+    }
+
+    .font-20 {
+        font-size: 12pt !important
+    }
+
+    .super-small {
+        font-size: 8pt !important;
+    }
+
+    .small-w-100 {
+        width: auto !important;
+    }
+}
+
+.small-w-100 {
+    width: 100%;
+}
+
+.hide-768 {
+    display: none;
+}
+
+.floating-medal {
+    position: absolute;
+    top: 145px;
+    left: 50px;
+}
+
+.ml-auto-768 {
+    margin-left: auto;
+}
+
+.tournament-card {
+    height: 180px;
+}
+
+.resp-m-top {
+    margin-top: 1.5em;
+}
+
+.text-right-center {
+    text-align: right;
+}
+
+#rankings-home div.left {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+#rankings-home div.right {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.rankings-gender-background>div {
+    height: 700px;
+}
+
+.nav-bar {
+    background-color: #252525;
+}
+
+.hero3 {
+    min-height: 750px;
+    height: 750px;
+}
+
+.row-into-column,
+.row-column {
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+h1.title {
+    font-size: 30pt;
+}
+
+.reverse-768 {
+    flex-direction: row;
+}
+
+.vertical-gap {
+    width: 50px
+}
+
+.sponsor {
+    width: 200px
+}
+
+.sponsor>img {
+    max-width: 200px;
+}
