@@ -6,6 +6,7 @@ import "./fonts.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapClient from "./components/BootstrapClient";
 
+// Font awesome pata de cabra!
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
@@ -27,8 +28,6 @@ const hindSans = Hind({
   weight: "400"
 });
 
-
-
 export const metadata: Metadata = {
   title: "Challenge Sports - 3v3",
   description: "Description of the website",
@@ -41,8 +40,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <link
           rel="stylesheet"
           href="https://www.w3schools.com/w3css/4/w3.css"
-        />
-        {/*<script src="https://kit.fontawesome.com/eeeae37be7.js"></script>*/}
+        />        
       </head>
       <body className={`${antonSans.variable} ${montserratSans.variable} ${hindSans.variable} antialiased`}>
         {children}
