@@ -1,7 +1,7 @@
+import Hero from "@/app/components/globals/Hero";
+
 export default function WhatsNew() {
-  return (
-    <section>
-      <h1 className="text-danger">What's new?</h1>
-    </section>
-  );
+  return (<>
+    <Hero background="/images/backgrounds/thelady.jpg" title="WHAT'S NEW" />
+  </>);
 }

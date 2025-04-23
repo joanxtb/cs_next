@@ -17,19 +17,19 @@ const antonSans = Anton({
   weight: "400"
 });
 
-const montserratSans = Montserrat({
-  variable: "--font-montserrat-sans",
-  subsets: ["latin"],
-});
-
 const hindSans = Hind({
   variable: "--font-hind-sans",
   subsets: ["latin"],
   weight: "400"
 });
 
+const montserratSans = Montserrat({
+  variable: "--font-montserrat-sans",
+  subsets: ["latin"]
+});
+
 export const metadata: Metadata = {
-  title: "Challenge Sports - 3v3",
+  title: "Challenge Sports - 3v3 at it's best",
   description: "Description of the website",
 };
 
@@ -42,7 +42,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
           href="https://www.w3schools.com/w3css/4/w3.css"
         />        
       </head>
-      <body className={`${antonSans.variable} ${montserratSans.variable} ${hindSans.variable} antialiased`}>
+      <body className={`${montserratSans.variable} antialiased`}>
         {children}
         <BootstrapClient />
       </body>

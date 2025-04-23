@@ -1,13 +1,29 @@
 'use client';
-
+import React from 'react';
 import BlackOverlay from "./BlackOverlay";
 import { motion } from 'motion/react';
 
-const Hero = () => {
-    return (<div className="hero3" style={{ position: 'relative', background: 'url(/images/backgrounds/little-girl-dribling.jpg) no-repeat center top', backgroundSize: 'cover' }}>
+interface HeroProps {
+    background: string,
+    title: string,
+    subtitle?: string
+}
+
+const Hero: React.FC<HeroProps> = ({ background, title, subtitle }) => {
+
+    const backgroundStyle = {
+        position: 'relative',
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center top',
+        backgroundColor: 'black',
+        backgroundSize: 'cover',
+    };
+
+    return (<div className="hero3" style={backgroundStyle}>
         <BlackOverlay />
         {/* Animate this */}
-        <motion.div
+        {title && <motion.div
             animate={{
                 scale: [1, 1.5, 1.5, 1, 1],
                 //rotate: [0, 0, 180, 180, 0],
@@ -22,11 +38,9 @@ const Hero = () => {
             }}
             className="hero3 d-flex flex-column justify-content-center"
         >
-
-            <span className="align-self-center hero-text text-center w-100 line1 text-white text-bold anton" style={{ fontSize: 120 }}>3v3</span>
-            <span className="align-self-center heroish-text text-center w-100 line1 text-white anton" style={{ fontSize: 60 }}>AT ITS BEST</span>
-
-        </motion.div>
+            {title && <span className="align-self-center hero-text text-center w-100 line1 text-white text-bold anton font-[120px]">{title}</span>}
+            {subtitle && <span className="align-self-center heroish-text text-center w-100 line1 text-white text-uppercase anton font-[60px]" >{subtitle}</span>}
+        </motion.div>}
     </div>)
 }
 export default Hero;

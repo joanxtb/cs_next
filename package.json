@@ -19,7 +19,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@tailwindcss/typography": "^0.5.16",
     "bootstrap": "^5.3.5",
+    "lottie-react": "^2.4.1",
     "moment": "^2.30.1",
     "motion": "^12.7.4",
     "next": "15.3.1",
@@ -27,6 +29,7 @@
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
+    "tailwindcss-animate": "^1.0.7",
     "underscore": "^1.13.7"
   },
   "devDependencies": {

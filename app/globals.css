@@ -19,6 +19,27 @@
   }
 }
 
+@layer utilities {
+  .heading {
+    @apply uppercase
+  }
+
+  .title {
+    @apply uppercase text-[30px] sm:text-[24px] p-0 m-0 !font-semibold
+  }
+
+  .pattern {
+    background-image: linear-gradient(to right,
+        transparent 49.5%,
+        rgba(231, 231, 231, 0.5) 49.5%,
+        rgba(234, 234, 234, 0.4) 50.5%,
+        transparent 50.5%);
+    background-size: 5% 100%;
+    background-position: center;
+    background-repeat: repeat-x;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -65,4 +86,18 @@ nav .selected,
 
 .line1 {
   line-height: 1;
+}
+
+input.dark,
+button.dark,
+textarea.dark {
+  background-color: #252525;
+  padding: 8px;
+  display: block;
+  border: none;
+  width: 100%;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
 }

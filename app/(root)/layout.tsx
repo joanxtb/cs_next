@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Footer from "../components/globals/Footer";
-import TheHero from "../components/globals/TheHero";
+import NavBar from "../components/globals/NavBar";
 
 export const metadata: Metadata = {
     title: "Challenge Sports",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
         <>            
-            <TheHero />
+            <NavBar />
             {children}
             <footer className={`w3-container p-2 bg-black show`}>
                 <Footer />

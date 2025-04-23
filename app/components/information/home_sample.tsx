@@ -6,9 +6,9 @@ import { motion } from 'motion/react';
 
 const InformationHome = () => {
 
-    return (
+    return (<div className="pattern">
         <div className="w3-content mx-auto py-4">
-            <Title message="Information" sub={null} className={null} />
+            <Title message="Information" />
             <div className="d-flex flex-column mt-4">
                 <div className="d-flex">
                     <Link href="/about" className="w-100" style={{ textDecoration: 'none' }}>
@@ -97,6 +97,7 @@ const InformationHome = () => {
                 </div>
             </div>
         </div>
+    </div>
     )
 }
 export default InformationHome;
